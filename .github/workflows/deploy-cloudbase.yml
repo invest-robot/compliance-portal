@@ -27,5 +27,5 @@ jobs:
       - name: Deploy to CloudBase
         run: |
           npm install -g @cloudbase/cli@latest
-          cloudbase login --apiKeyId "${{ secrets.TCB_SECRET_ID }}" --apiKey "${{ secrets.TCB_SECRET_KEY }}"
+          cloudbase login --apiKeyId "${{ secrets.CLOUDBASE_SECRET_ID }}" --apiKey "${{ secrets.CLOUDBASE_SECRET_KEY }}"
           cloudbase framework:deploy -e jzsz-d1g8h2zqf66ba4352
