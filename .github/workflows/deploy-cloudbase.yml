@@ -29,6 +29,7 @@ jobs:
           npm install -g @cloudbase/cli@latest
           cloudbase login --apiKeyId "$TCB_SECRET_ID" --apiKey "$TCB_SECRET_KEY"
           npm install @cloudbase/framework-plugin-website@latest
+          mkdir -p /home/runner/cloudbase-framework/registry/node_modules/@cloudbase
           mv node_modules/@cloudbase/framework-plugin-website /home/runner/cloudbase-framework/registry/node_modules/@cloudbase/framework-plugin-website
           tcb framework deploy -e jzsz-d1g8h2zqf66ba4352
         env:
