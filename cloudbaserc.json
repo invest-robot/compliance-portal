@@ -1,0 +1,18 @@
+{
+  "envId": "jzsz-d1g8h2zqf66ba4352",
+  "version": "2.0",
+  "framework": {
+    "name": "compliance-portal",
+    "plugins": {
+      "client": {
+        "use": "@cloudbase/framework-plugin-website",
+        "inputs": {
+          "buildCommand": "npm run build:client",
+          "outputPath": "dist/client",
+          "cloudBasePath": "/",
+          "ignore": [".git", ".github", ".gitignore", "node_modules"]
+        }
+      }
+    }
+  }
+}
