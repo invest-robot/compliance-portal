@@ -36,5 +36,5 @@ jobs:
           cloudbase login --apiKeyId "$TCB_SECRET_ID" --apiKey "$TCB_SECRET_KEY"
           cloudbase framework:deploy -e jzsz-d1g8h2zqf66ba4352
         env:
-          TCB_SECRET_ID: ${{ secrets.CLOUDBASE_SECRET_ID }}
-          TCB_SECRET_KEY: ${{ secrets.CLOUDBASE_SECRET_KEY }}
+          TCB_SECRET_ID: ${{ secrets.TCB_SECRET_ID }}
+          TCB_SECRET_KEY: ${{ secrets.TCB_SECRET_KEY }}
